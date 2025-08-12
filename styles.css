@@ -1,0 +1,138 @@
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f2f2f2;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.hero button:hover {
+    opacity: 0.9;
+}
+/* --- What we do section --- */
+:root {
+  --container-pad: 20px;
+  --accent: #FF6565;
+  --card-bg: #fff;
+  --card-radius: 10px;
+}
+
+.what-we-do {
+  padding: 48px var(--container-pad);
+  background: #fafafa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.section-lead {
+  text-align: center;
+  color: #666;
+  margin-bottom: 28px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* grid of service cards */
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.service-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* icon styling — generic */
+.service-card .icon {
+  display: inline-block;
+  font-size: 40px;   /* icon fonts scale by font-size */
+  line-height: 1;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+/* card hover */
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.08);
+}
+
+/* headings and text */
+.service-card h3 {
+  margin: 8px 0;
+  font-size: 18px;
+}
+.service-card p {
+  color: #444;
+  font-size: 14px;
+}
+
+/* MOBILE: stack cards for small screens */
+@media (max-width: 480px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+  .section-title { font-size: 22px; }
+}

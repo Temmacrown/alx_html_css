@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-    <title>My Page</title>
-    <link href="base.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>My First Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link rel="stylesheet" href="0-styles.css">
 </head>
 <body>
-  <header>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="tweets.html">Tweets</a></li>
-    </ul>
-  </header>
 
-  <main>
-    <article>
-      <h1>Welcome to My Portfolio</h1>
-      <h2>About Me</h2>
-      <p>I am an aspiring web developer passionate about building user-friendly websites.</p>
+    <!-- Header / Hero section -->
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
-      <h3>Interests</h3>
-      <p>I enjoy coding, reading tech blogs, and learning new programming languages.</p>
-      <p>This is an example of a paragraph on my site.</p>
-      <p>Here’s another paragraph explaining what I do.</p>
-      <p>I’m also interested in contributing to open source projects.</p>
+        <div class="hero">
+            <!-- WHAT WE DO -->
+<section class="what-we-do" id="what-we-do">
+  <div class="container">
+    <h2 class="section-title">What we do</h2>
+    <p class="section-lead">We make great sound, simple design and long battery life.</p>
 
-      <a href="https://www.example.com" target="_blank">
-        <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo">
-      </a>
+    <div class="services">
+      <article class="service-card">
+        <!-- Replace 'icon-example-1' with the real icon class from demo.html -->
+        <i class="icon icon-example-1" aria-hidden="true"></i>
+        <h3>Design</h3>
+        <p>Comfortable and stylish headphones.</p>
+      </article>
 
-      <!-- 🔽 New Table of Learners Inserted Here -->
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Country</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>25</td>
-            <td>USA</td>
-          </tr>
-          <tr>
-            <td>Emily</td>
-            <td>28</td>
-            <td>Canada</td>
-          </tr>
-          <tr>
-            <td>Michael</td>
-            <td>32</td>
-            <td>Australia</td>
-          </tr>
-          <tr>
-            <td>Sophia</td>
-            <td>21</td>
-            <td>UK</td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- 🔼 Table Ends Here -->
-    </article>
+      <article class="service-card">
+        <i class="icon icon-example-2" aria-hidden="true"></i>
+        <h3>Sound</h3>
+        <p>Rich bass and clear highs for all music.</p>
+      </article>
 
-    <aside>
-      <p>placeholder to add comment thread later</p>
-    </aside>
-  </main>
+      <article class="service-card">
+        <i class="icon icon-example-3" aria-hidden="true"></i>
+        <h3>Battery</h3>
+        <p>Play all day with long battery life.</p>
+      </article>
 
-  <footer>
-    <p>Made by Your Name - <a href="https://your-link.com" target="_blank">here</a>.</p>
-  </footer>
+      <article class="service-card">
+        <i class="icon icon-example-4" aria-hidden="true"></i>
+        <h3>Support</h3>
+        <p>We help you if something goes wrong.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+            <h1>Your Favorite Headphones</h1>
+            <p>Experience sound like never before.</p>
+            <button>Shop Now</button>
+        </div>
+    </header>
+
 </body>
 </html>
